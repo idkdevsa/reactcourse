@@ -1,0 +1,61 @@
+.icon-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.icon-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.season-display.summer i {
+  animation: colorChangeSummer 20s ease-in-out alternate-reverse infinite;
+  -webkit-animation: colorChangeSummer 20s ease-in-out alternate-reverse
+    infinite;
+}
+
+@keyframes colorChangeSummer {
+  10% {
+    color: yellow;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: green;
+  }
+}
+
+.season-display.winter i {
+  animation: colorChangeWinter 20s ease-in-out alternate-reverse infinite;
+  -webkit-animation: colorChange 20s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes colorChangeWinterWinter {
+  10% {
+    color: blue;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: grey;
+  }
+}
+
+.season-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.winter {
+  background-color: aquamarine;
+}
+
+.summer {
+  background-color: orange;
+}
