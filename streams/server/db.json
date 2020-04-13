@@ -1,0 +1,43 @@
+{
+  "streams": [
+    {
+      "title": "StreamOne",
+      "description": "The first posted stream.",
+      "id": 1
+    },
+    {
+      "title": "StreamTwo",
+      "description": "Now we're getting somewhere.",
+      "id": 2
+    },
+    {
+      "title": "StreamTwo",
+      "description": "Now we're getting somewhere.",
+      "id": 3
+    },
+    {
+      "title": "StreamThree",
+      "description": "Now with the UserId!",
+      "userId": "105910613159600494411",
+      "id": 4
+    },
+    {
+      "title": "StreamFour",
+      "description": "Now pushing custom history",
+      "userId": "105910613159600494411",
+      "id": 5
+    },
+    {
+      "title": "TestForm1",
+      "description": "idkForm",
+      "userId": "101178244464341262123",
+      "id": 6
+    },
+    {
+      "title": "TestForm2",
+      "description": "Blablabla",
+      "userId": "101178244464341262123",
+      "id": 7
+    }
+  ]
+}
