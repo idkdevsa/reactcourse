@@ -15,7 +15,12 @@ class StreamList extends React.Component {
           <Link className="ui button primary" to={`streams/edit/${stream.id}`}>
             Edit
           </Link>
-          <button className="ui button negative">Delete</button>
+          <Link
+            to={`/streams/delete/${stream.id}`}
+            className="ui button negative"
+          >
+            Delete
+          </Link>
         </div>
       );
     }
@@ -34,7 +39,7 @@ class StreamList extends React.Component {
   }
 
   renderList() {
-    return this.props.streams.map(stream => {
+    return this.props.streams.map((stream) => {
       return (
         <div className="item" key={stream.id}>
           {this.renderAdminButtons(stream)}
@@ -58,11 +63,11 @@ class StreamList extends React.Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     streams: Object.values(state.streams),
     currentUserId: state.auth.userId,
-    isSignedIn: state.auth.isSignedIn
+    isSignedIn: state.auth.isSignedIn,
   };
 };
 
